@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CompXamarin.Vistas.FechaHora"
+             Title="Fechas">
+    <ContentPage.Content>
+        <StackLayout>
+            <DatePicker x:Name="dtfecha"
+                        Format="MM/dd/yyyy"
+                        Margin="30, 0, 0, 30"
+                        DateSelected="dtfecha_DateSelected">
+                
+            </DatePicker>
+            <TimePicker x:Name="TpHora"
+                        PropertyChanged="TpHora_PropertyChanged">
+                
+            </TimePicker>
+            <Label x:Name="lblResultado" Text="Resultado"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="lblHora" Text="Hora"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

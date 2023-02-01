@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="CompXamarin.Vistas.AlertaN1">
+    <Frame CornerRadius="15" Margin="50, 170, 50, 170">
+        <Grid BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <Image Source="angulo.png"
+               HeightRequest="150"
+               WidthRequest="150"
+               Margin="150"/>
+            <Label Text="Soy un mensaje Popup"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Grid.Row="1"
+               FontSize="20"/>
+            <Button Text="OK"
+                    BackgroundColor="Turquoise"
+                    Grid.Row="2"
+                    CornerRadius="5"
+                    x:Name="btnOk"
+                    Clicked="btnOk_Clicked"/>
+
+        </Grid>
+    </Frame>
+</popup:PopupPage>
